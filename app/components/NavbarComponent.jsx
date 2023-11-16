@@ -2,7 +2,7 @@
 
 import { Fragment, useState } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
-import { IoMdClose, IoMdMenu } from 'react-icons/io'; 
+import { IoMdClose, IoMdMenu } from 'react-icons/io';
 import { Logo } from '@app/assets';
 import { Link } from "react-scroll";
 import { Navigation } from '@app/constants';
@@ -92,14 +92,14 @@ const NavbarComponent = ({ headerId, headerStyles, }) => {
           <div className="flex h-16 py-9 items-center">
             {/* Logo */}
             <div className="ml-0 flex">
-              <Link to="#">
-                <span className="sr-only">Logo</span>
+              <span className="sr-only">Logo</span>
+              <a href="https://daniel-ibitowa.vercel.app" target="_blank">
                 <Image
                   className="w-28 xs:w-36 md:w-40 xl:w-48"
                   src={Logo}
                   alt=""
                 />
-              </Link>
+              </a>
             </div>
 
             <ul className="hidden list-none lg:flex lg:flex-1 lg:gap-x-12 lg:justify-center">
